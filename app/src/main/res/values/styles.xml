@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">#FFFFFF</item>
         <item name ="android:font">@font/pt_sans_narrow_bold</item>
+        <item name = "android:textSize">@dimen/_100sdp</item>
     </style>
 
 </resources>
