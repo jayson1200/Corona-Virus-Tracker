@@ -8,16 +8,83 @@
     tools:context=".MainActivity" >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/confirmedCasesImageView"
         android:layout_width="match_parent"
-        android:layout_height="184dp"
+        android:layout_height="@dimen/_95sdp"
         android:layout_marginStart="8dp"
 
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
-        android:scaleType="fitCenter"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/blueinfobox" />
+
+    <ImageView
+        android:id="@+id/recoveredImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmedCasesImageView"
+        app:srcCompat="@drawable/yellowinfobox" />
+
+    <ImageView
+        android:id="@+id/deathsImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recoveredImageView"
+        app:srcCompat="@drawable/redinfobox" />
+
+    <ImageView
+        android:id="@+id/criticalImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deathsImageView"
+        app:srcCompat="@drawable/orangeinfobox" />
+
+    <ImageView
+        android:id="@+id/activeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/criticalImageView"
+        app:srcCompat="@drawable/greeninfobox" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-11dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
